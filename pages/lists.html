@@ -91,10 +91,11 @@
         </div>
         
         <p>For strings, the <span>split()</split> method returns the string split into a list of substrings.</p>
-        <div data-datacamp-exercise data-lang="python" data-height="150">
+        <div data-datacamp-exercise data-lang="python" data-height="200">
             <code data-type="sample-code">
             hello = "Hello, World!"
-            print(hello.split()) #Split into individual characters
+            print(hello.split()) #Split by whitespaces
+            print(hello.split("")) #Split into individual characters
             print(hello.split(',')) #Split by the ',' character
             </code>
         </div>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Operators</title>
+    <link rel="shortcut icon" type="image/png" href="/python-icon.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
+    <!--Console Imports-->
+    <script src="/python.js"></script>
+    <link rel="stylesheet" type="text/css" href="/console.css">
+
+    <!--Webpage Imports-->
+    <link rel="stylesheet" type="text/css" href="/main.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+
+        <ul class="topnav">
+            <li class="nav"><a class="btn btn-primary" href="/">Home</a></li>
+            <li class="nav"><a class="btn btn-primary" href="/pages/playground.html">Playground</a></li>
+        </ul>
+
+        <h1>Operators</h1>
+        <div class=divider></div>
+
+        <p>Using operators in python</p>
+    
+        <h3>Arithmetic Operators</h3>
+
+        <p>Arithemetic operators are used to perform mathmatical operations like addition, subtraction and multiplication. These actions can be chained to perform more complicated calculations.</p>
+        <div data-datacamp-exercise data-lang="python" data-height="350">
+            <code data-type="sample-code">
+            #Addition
+            print(12 + 6)
+
+            #Subtraction
+            print(4 - 2)
+
+            #Multiplication
+            print(3 * 6)
+
+            #Division
+            print(10 / 2)
+
+            #Chaining
+            print(1 + 2 * 3 / 4)
+            </code>
+        </div>
+        <p>Another important operation is the modulo <span>%</span> operation which returns the remainder of the division.</p>
+        <div data-datacamp-exercise data-lang="python" data-height="200">
+            <code data-type="sample-code">
+            #Will return 2
+            print(17 % 5)
+            #Will return 0
+            print(6 % 2)
+            </code>
+        </div>
+        <p>Two multiplication symbols <span>**</span> creates a power operator</p>
+        <div data-datacamp-exercise data-lang="python" data-height="200">
+            <code data-type="sample-code">
+            #Will return 49
+            print(7 ** 2)
+            #Will return 8
+            print(2 ** 3)
+            </code>
+        </div>
+
+        <h3>Operators on strings</h3>
+        <p>Python supports concatenating strings using the addition operator</p>
+        <div data-datacamp-exercise data-lang="python" data-height="150">
+            <code data-type="sample-code">
+                #Hello World
+                print("hello" + " " +"world")
+            </code>
+        </div>
+        <p>It also supports multiplying (repeating) strings using the multiplication operator</p>
+        <div data-datacamp-exercise data-lang="python" data-height="150">
+            <code data-type="sample-code">
+                #Lots of hello
+                print("hello" * 5)
+            </code>
+        </div>
+
+        <p>Python does not support using operations combining different types of variables</p>
+        <div data-datacamp-exercise data-lang="python" data-height="150">
+            <code data-type="sample-code">
+                #Will Error
+                print("string" + 9)
+            </code>
+        </div>
+
+
+        <h3>Casting</h3>
+        <p>There may be times where we need to convert one variable type to another.</p>
+        <ul>
+            <li><p>To convert a variable to an integer use the <span>int()</span> function.</p></li>
+            <li><p>To convert a variable to an string use the <span>str()</span> function.</p></li>
+            <li><p>To convert a variable to an float point number use the <span>float()</span> function.</p></li>
+        </ul>
+        <div data-datacamp-exercise data-lang="python" data-height="300">
+            <code data-type="sample-code">
+                #int()
+                a = int(7.5) #will be 7
+                b = int("4") #will be 4
+
+                #str()
+                c = str(2) #will be '2'
+                d = str(3.2) # will be '3.2'
+
+                #float()
+                e = float(1) #will be 1.0
+                f = float("4.2") # will be 4.2
+            </code>
+        </div>
+
+        <h3>Comparison Operators</h3>
+        <p>Comparison Operators are used to compare to values. The most common is the Equal <span>==</span> operator, checking if two values are equivalent.</p>
+        <div data-datacamp-exercise data-lang="python" data-height="450">
+            <code data-type="sample-code">
+                a = 5
+                b = 4
+
+                #Equal
+                print(a == b)
+
+                #Not Equal
+                print(a != b)
+
+                #Greater than
+                print(a > b)
+
+                #Less than
+                print(a < b)
+
+                #Greater than or equal to
+                print(a >= b)
+
+                #Less than or equal to
+                print(a <= b)
+            </code>
+        </div>
+
+        <h2>Exersize</h2>
+        <p>Multiply 5 and 3 and print the result.</p>
+        <div data-datacamp-exercise data-lang="python" data-height="200">
+            <code data-type="sample-code">
+                print(5 _ 3)               
+            </code>
+            <code data-type="solution">
+            print(5 * 3)
+            </code>
+            <code data-type="sct">
+                test_output_contains("15")
+                success_msg("Great job!")
+            </code>
+        </div>
+
+        <p>Add a comparison operator to make this output <span>True</span>.</p>
+        <div data-datacamp-exercise data-lang="python" data-height="200">
+            <code data-type="sample-code">
+            a = 6
+            b = 4
+            print(6 _ 4)
+            </code>
+            <code data-type="solution">
+                a = 6
+                b = 4
+                print(6 > 4)
+            </code>
+            <code data-type="sct">
+                test_output_contains("True")
+                success_msg("Great job!")
+            </code>
+        </div>
+
+            <div class=divider></div>
+            <!--<a class="btn btn-primary right" >Next Tutorial <i class="fa fa-chevron-right"></i></a>-->
+
+            <a class="btn btn-secondary left" href="/pages/variables.html"><i class="fa fa-chevron-left"></i> Previous Tutorial</a>
+        </div>
+    </div>
+</body>
+</html>

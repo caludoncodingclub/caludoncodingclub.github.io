@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Variables and Data Types</title>
+    <link rel="shortcut icon" type="image/png" href="/python-icon.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
+    <!--Console Imports-->
+    <script src="/python.js"></script>
+    <link rel="stylesheet" type="text/css" href="/console.css">
+
+    <!--Webpage Imports-->
+    <link rel="stylesheet" type="text/css" href="/main.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+
+        <ul class="topnav">
+            <li class="nav"><a class="btn btn-primary" href="/">Home</a></li>
+            <li class="nav"><a class="btn btn-primary" href="/pages/playground.html">Playground</a></li>
+        </ul>
+
+
+        <h1>Variables and Data Types</h1>
+        <div class=divider></div>
+
+        <p>Variables are how programs store data to be used. Every variable has a unique name (called the identifier) and can be given a value.</p>
+
+        <h3>Numbers</h3>
+        <p>Python supports two types of numbers, <span>integers</span> and <span>floating point numbers</span>.</p>
+
+        <p>An integer is a strictly whole number. To define one in Python, use the following syntax:</p>
+        <div data-datacamp-exercise data-lang="python" data-height="150">
+            <code data-type="sample-code">
+            myInteger = 7
+            print(myInteger)
+            </code>
+        </div>
+
+        <p>A floating point number is a number with a decimal component (although it can still be a whole number). <br>To define one in Python, you may use one of the following syntax:</p>
+        <div data-datacamp-exercise data-lang="python" data-height="200">
+            <code data-type="sample-code">
+            myFloat = 7.5
+            print(myFloat)
+            myFloat = float(7)
+            print(myFloat)
+            </code>
+        </div>
+
+        <h3>Strings</h3>
+        <p>Strings are used to store text and are defined either with a single quote or a double quotes.</p>
+        <div data-datacamp-exercise data-lang="python" data-height="200">
+            <code data-type="sample-code">
+            myString = "Hello"
+            print(myString)
+            myString = 'Hello'
+            print(myString)
+            </code>
+        </div>
+
+        <h3>Booleans</h3>
+        <p>Boolean variables refers to the constants <span>True</span> and <span>False</span>.</p>
+        <div data-datacamp-exercise data-lang="python" data-height="200">
+            <code data-type="sample-code">
+            myBool = True
+            print(myBool)
+            myBool = False
+            print(myBool)
+            </code>
+        </div>
+
+        <h2>Exercise</h2>
+        <p>For this exersize, you need to setup some variables with some different variable types. The variable called <span>myString</span> should contain the string <span>"hello"</span>, <span>myFloat</span> should contain the floating point <span>12.5</span>, <span>myInt</span> should contain the integer <span>25</span> and <span>myBool</span> should contain the boolean <span>False</span>.</p>
+        <div data-datacamp-exercise data-lang="python" data-height="350">
+            <code data-type="sample-code">
+                #Change this code
+                myString = None
+                myFloat = None
+                myInt = None
+                myBool = None
+                
+                #Testing code (this can be ignored)
+                if myString == "hello":
+                    print("String:",myString)
+                if isinstance(myFloat, float) and myFloat == 12.5:
+                    print("Float:",myFloat)
+                if isinstance(myInt, int) and myInt == 25:
+                    print("Integer:",myInt)
+                if isinstance(myBool, bool) and myBool == False:
+                    print("Bool:",myBool)
+            </code>
+            <code data-type="solution">
+                #Change this code
+                myString = 'hello'
+                myFloat = 12.5
+                myInt = 25
+                myBool = False
+                
+                #Testing code (this can be ignored)
+                if myString == "hello":
+                    print("String:",myString)
+                if isinstance(myFloat, float) and myFloat == 12.5:
+                    print("Float:",myFloat)
+                if isinstance(myInt, int) and myInt == 25:
+                    print("Integer:",myInt)
+                if isinstance(myBool, bool) and myBool == False:
+                    print("Bool:",myBool)
+            </code>
+            <code data-type="sct">
+                test_output_contains("String: hello",no_output_msg= "Make sure your string matches exactly to the exercise desciption.")
+                test_output_contains("Float: 12.5",no_output_msg= "Make sure your float matches exactly to the exercise desciption.")
+                test_output_contains("Integer: 25",no_output_msg= "Make sure your integer matches exactly to the exercise desciption.")
+                test_output_contains("Bool: False",no_output_msg= "Make sure your bool matches exactly to the exercise desciption.")
+                success_msg("Great job!")
+            </code>
+        </div>
+
+        <div class=divider></div>
+        <a class="btn btn-primary right" href="/pages/operators.html">Next Tutorial <i class="fa fa-chevron-right"></i></a>
+
+        <a class="btn btn-secondary left" href="/pages/helloworld.html"><i class="fa fa-chevron-left"></i> Previous Tutorial</a>
+    </div>
+</body>
+</html>

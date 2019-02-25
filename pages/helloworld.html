@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hello, World!</title>
+    <link rel="shortcut icon" type="image/png" href="/python-icon.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
+    <!--Console Imports-->
+    <script src="/python.js"></script>
+    <link rel="stylesheet" type="text/css" href="/console.css">
+
+    <!--Webpage Imports-->
+    <link rel="stylesheet" type="text/css" href="/main.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+
+        <ul class="topnav">
+            <li class="nav"><a class="btn btn-primary" href="/">Home</a></li>
+            <li class="nav"><a class="btn btn-primary" href="/pages/playground.html">Playground</a></li>
+        </ul>
+
+        <h1>Hello, World!</h1>
+        <div class=divider></div>
+
+        <p>Python is a simple language, using very straightforward syntax. The simplest directive in python is the <span>print</span> directive, which simply outputs a line.</p>
+        <p>To print a line in Python, just write:</p>
+
+        <div data-datacamp-exercise data-lang="python" data-height="auto">
+            <code data-type="sample-code">
+            print("This text will be printed")
+            </code>
+        </div>
+    
+        <h3>Commenting</h3>
+        <p>Commenting is used to clarify the code and highlight what is happening, thus isn't interpreted by Python</p>
+        <p>To write a comment start a line with the <span>#</span> symbol</p>
+        <div data-datacamp-exercise data-lang="python" data-height="200">
+            <code data-type="sample-code">
+            #This is a comment
+            #print("This text will not be printed")
+            </code>
+        </div>
+
+        <h2>Exersize</h2>
+        <p>Use the <span>print</span> directive to output the line <span>"Hello, World!"</span></p>
+        <div data-datacamp-exercise data-lang="python" data-height="300">
+            <code data-type="pre-exercise-code"># no pec</code>
+            <code data-type="sample-code">
+            #Print "Hello, World!"
+            print("Goodbye, World!")
+            </code>
+            <code data-type="solution">
+            #Print "Hello, World!"
+            print("Hello, World!")
+            </code>
+            <code data-type="sct">
+                test_output_contains("Hello, World!")
+                success_msg("Great job!")
+            </code>
+            </div>
+
+            <div class=divider></div>
+            <a class="btn btn-primary right" href="/pages/variables.html">Next Tutorial <i class="fa fa-chevron-right"></i></a>
+
+            <a class="btn btn-secondary left" href="/">Home</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Lists</title>
+    <link rel="shortcut icon" type="image/png" href="https://caludoncodingclub.github.io/caludoncodingclub.github.io/python-icon.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
+    <!--Console Imports-->
+    <script src="python.js"></script>
+    <link rel="stylesheet" type="text/css" href="console.css">
+
+    <!--Webpage Imports-->
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+
+        <ul class="topnav">
+            <li class="nav"><a class="btn btn-primary" href="/">Home</a></li>
+            <li class="nav"><a class="btn btn-primary" href="/pages/playground.html">Playground</a></li>
+        </ul>
+
+        <h1>Lists</h1>
+        <div class=divider></div>
+
+        <p>A list is a collection of data, stored under a single variable. In Python they are created with square brackets <span>[</span> and each element is seperated by a comma <span>,</span>.</p>
+
+        <div data-datacamp-exercise data-lang="python" data-height="150">
+            <code data-type="sample-code">
+            #Example of a list
+            myList = [1,2,3]
+            print(myList)
+            </code>
+        </div>
+    
+        <p>We can access an index of the list, similar to how we access a variable. The only difference is including an index offset <span>[n]</span> where n is the index of the element. Something to note is that indexes start at 0, so to access the second element use <span>[1]</span>.</p>
+        <div data-datacamp-exercise data-lang="python" data-height="150">
+            <code data-type="sample-code">
+            myList = [1,2,3]
+            print(myList[2]) #Prints the third element of the list
+            </code>
+        </div>
+
+        <p>Accessing an element which does not exist produces an error.</p>
+        <div data-datacamp-exercise data-lang="python" data-height="150">
+            <code data-type="sample-code">
+            myList = [1,2,3]
+            print(myList[5]) #Will create an error
+            </code>
+        </div>
+
+        <h3>Adding items to a list</h3>
+        <p>Items can be added to a list using the <span>.append()</span> function.</p>
+        <div data-datacamp-exercise data-lang="python" data-height="150">
+            <code data-type="sample-code">
+            myList = []
+            myList.append(1) #Add 1 to the list
+            print(myList)
+            </code>
+        </div>
+
+        <h3>Removing items from a list</h3>
+        <p>Items can be removed from a list using the <span>.pop(n)</span> function where n is the index to be removed. The pop function also returns the item that has been removed.</p>
+        <div data-datacamp-exercise data-lang="python" data-height="150">
+            <code data-type="sample-code">
+            myList = [1,2,3]
+            myList.pop(1) #Remove 2 from the list
+            print(myList)
+            </code>
+        </div>
+
+        <h3>Operators and lists</h3>
+        <p>Like strings and integers, lists can combined using the addition operator.</p>
+        <div data-datacamp-exercise data-lang="python" data-height="150">
+            <code data-type="sample-code">
+            a = [1,2,3,4,5]
+            b = [6,7,8,9,10]
+            print(a + b) #Combine the lists
+            </code>
+        </div>
+
+        <p>The <span>len()</span> function refers the number of items in the list.</p>
+        <div data-datacamp-exercise data-lang="python" data-height="150">
+            <code data-type="sample-code">
+            a = [1,2,3,4,5]
+            print(len(a)) #Get the length of the list
+            </code>
+        </div>
+
+        <h2>Exercize</h2>
+        <p>For this exersize, you need to set up some lists and collect some data. Data needs to be added to the ages list so that Alice's age is 4, Bob's age is 7 and Charlie's age is 5. Then you need to collect the information on Bob to be printed out.</p>
+        <div data-datacamp-exercise data-lang="python" data-height="350">
+            <code data-type="pre-exercise-code"># no pec</code>
+            <code data-type="sample-code">
+            names = ["Alice","Bob","Charlie"]
+            ages = []
+
+            #Write your code here
+
+
+            second_name = None
+            second_age = None
+
+            #Printing out the full arrays
+            print(names)
+            print(ages)
+            #then about the second person
+            print("The second person is",second_name,"and they are",second_age,"years old.")
+            </code>
+            <code data-type="solution">
+            names = ["Alice","Bob","Charlie"]
+            ages = []
+
+            #Write your code here
+            ages.append(4)
+            ages.append(7)
+            ages.append(5)
+
+            second_name = names[1]
+            second_age = ages[1]
+
+            #Printing out the full arrays
+            print(names)
+            print(ages)
+            #then about the second person
+            print("The second person is",second_name,"and they are",second_age,"years old.")
+            </code>
+            <code data-type="sct">
+                test_output_contains('["Alice","Bob","Charlie"]')
+                test_output_contains("[4,7,5]")
+                test_output_contains("The second person is Bob and they are 7 years old.")
+                success_msg("Great job!")
+            </code>
+            </div>
+
+            <div class=divider></div>
+            <!--<a class="btn btn-primary right">Next Tutorial <i class="fa fa-chevron-right"></i></a>-->
+
+            <a class="btn btn-secondary left" href="/pages/operators.html"><i class="fa fa-chevron-left"></i> Previous Tutorial</a>
+        </div>
+    </div>
+</body>
+</html>
